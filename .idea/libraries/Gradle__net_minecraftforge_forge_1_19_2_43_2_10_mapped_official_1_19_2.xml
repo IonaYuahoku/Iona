@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: net.minecraftforge:forge:1.19.2-43.2.10_mapped_official_1.19.2" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="net.minecraftforge" artifactId="forge" version="1.19.2-43.2.10_mapped_official_1.19.2" baseVersion="1.19.2-43.2.10_mapped_official_1.19.2" />
+    <ANNOTATIONS>
+      <root url="jar://$APPLICATION_PLUGINS_DIR$/Minecraft Development/lib/resources/externalAnnotations.jar!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../gradle-7.5.1/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.19.2-43.2.10_mapped_official_1.19.2/forge-1.19.2-43.2.10_mapped_official_1.19.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

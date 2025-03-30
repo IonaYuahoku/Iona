@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: net.minecraftforge:fmlcore:1.19.2-43.2.10" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="net.minecraftforge" artifactId="fmlcore" version="1.19.2-43.2.10" baseVersion="1.19.2-43.2.10" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../gradle-7.5.1/caches/modules-2/files-2.1/net.minecraftforge/fmlcore/1.19.2-43.2.10/ee1a777bed89b629bc6dca71c753d82fe4c3e733/fmlcore-1.19.2-43.2.10.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
