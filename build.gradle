@@ -15,8 +15,8 @@ java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 println "Java: ${System.getProperty 'java.version'}, JVM: ${System.getProperty 'java.vm.version'} (${System.getProperty 'java.vendor'}), Arch: ${System.getProperty 'os.arch'}"
 
 minecraft {
-    version '1.19.2-43.2.10' // Убедитесь, что версия Forge правильно указана
     mappings channel: 'official', version: '1.19.2'
+
 
     runs {
         client {
@@ -58,14 +58,19 @@ sourceSets.main.resources { srcDir 'src/generated/resources' }
 repositories {
     mavenCentral()
     maven { url 'https://maven.minecraftforge.net' }  // Репозиторий для Forge
-    maven { url 'https://jitpack.io' } // Репозиторий для Registrate и других зависимостей с GitHub
+     maven {
+        url "https://jitpack.io"
+        credentials {
+            username = "IonaYuahoku"
+            password = project.findProperty("GITHUB_TOKEN") ?: ""
+        }
+    }
 }
 
 dependencies {
-    // Зависимость для проекта на GitHub (пример)
-    implementation 'com.github.Username:Repo:Version'  // Используйте реальное имя пользователя и репозитория
-    // Например:
-    // implementation 'com.github.Tterrag.registrate:Registrate:MC1.19.2-1.5.0'
+    implementation 'com.github.IonaYuahoku:my_mod:master-SNAPSHOT'
+    minecraft 'net.minecraftforge:forge:1.19.2-43.2.10' // Убедитесь, что версия Forge правильно указана
+
 }
 
 // Example for how to get properties into the manifest for reading at runtime.
@@ -101,7 +106,7 @@ sourceSets {
             srcDirs = ['src/main/java']
         }
         resources {
-            srcDirs = ['src/main/resources']
+            srcDirs = ['src/main/resources', 'src/generated/resources']
         }
     }
 }
